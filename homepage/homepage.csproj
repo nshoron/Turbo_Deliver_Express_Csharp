@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28AEDD8E-6DE1-4D60-9F24-B35D4AF909C9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>homepage</RootNamespace>
+    <AssemblyName>homepage</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADD_ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD_ADMIN.Designer.cs">
+      <DependentUpon>ADD_ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN_DASHBOARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN_DASHBOARD.Designer.cs">
+      <DependentUpon>ADMIN_DASHBOARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Profile.Designer.cs">
+      <DependentUpon>Admin_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Available_parcels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Available_parcels.Designer.cs">
+      <DependentUpon>Available_parcels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUST_Parcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUST_Parcel.Designer.cs">
+      <DependentUpon>CUST_Parcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELI_PROFILE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELI_PROFILE.Designer.cs">
+      <DependentUpon>DELI_PROFILE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerPRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerPRO.Designer.cs">
+      <DependentUpon>CustomerPRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DM_DASHBOARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DM_DASHBOARD.Designer.cs">
+      <DependentUpon>DM_DASHBOARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Customer.Designer.cs">
+      <DependentUpon>Manage_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_DELIVERY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_DELIVERY.Designer.cs">
+      <DependentUpon>Manage_DELIVERY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT_VIA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT_VIA.Designer.cs">
+      <DependentUpon>PAYMENT_VIA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpPage.Designer.cs">
+      <DependentUpon>SignUpPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTSignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUSTSignIn.Designer.cs">
+      <DependentUpon>CUSTSignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DMSIGN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMSIGN.Designer.cs">
+      <DependentUpon>DMSIGN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TRACK_PARCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRACK_PARCEL.Designer.cs">
+      <DependentUpon>TRACK_PARCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Parcels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Parcels.Designer.cs">
+      <DependentUpon>Update_Parcels.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADD_ADMIN.resx">
+      <DependentUpon>ADD_ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN_DASHBOARD.resx">
+      <DependentUpon>ADMIN_DASHBOARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Profile.resx">
+      <DependentUpon>Admin_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Available_parcels.resx">
+      <DependentUpon>Available_parcels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerPRO.resx">
+      <DependentUpon>CustomerPRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUST_Parcel.resx">
+      <DependentUpon>CUST_Parcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELI_PROFILE.resx">
+      <DependentUpon>DELI_PROFILE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DM_DASHBOARD.resx">
+      <DependentUpon>DM_DASHBOARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Customer.resx">
+      <DependentUpon>Manage_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_DELIVERY.resx">
+      <DependentUpon>Manage_DELIVERY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT_VIA.resx">
+      <DependentUpon>PAYMENT_VIA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpPage.resx">
+      <DependentUpon>SignUpPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUSTSignIn.resx">
+      <DependentUpon>CUSTSignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMSIGN.resx">
+      <DependentUpon>DMSIGN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRACK_PARCEL.resx">
+      <DependentUpon>TRACK_PARCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Parcels.resx">
+      <DependentUpon>Update_Parcels.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PASSS.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USERS.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CUSTOMER.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deliverman.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CUSTREg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DEVMAN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no image avaiable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\custdash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\191.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\192.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-bill-green-dollar-banknote-with-wings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-bill-green-dollar-banknote-with-wings-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons8-Windows-8-Users-Group.512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Your paragraph text %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wao1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wao2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saki-NuoveXT-2-Actions-green-arrow-right-end.ico" />
+    <None Include="Resources\_da0384a5-a495-47bc-83d7-b7ffd0fc28852.jpeg" />
+    <None Include="Resources\_da0384a5-a495-47bc-83d7-b7ffd0fc28851.jpeg" />
+    <None Include="Resources\_da0384a5-a495-47bc-83d7-b7ffd0fc2885.jpeg" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\images.jpeg" />
+    <None Include="Resources\wallpaperflare.com_wallpaper %285%29.jpg" />
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-list-add-user.ico" />
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-edit-redo.ico" />
+    <None Include="Resources\Pictogrammers-Material-Light-View-dashboard.ico" />
+    <None Include="Resources\peakpx %282%29.jpg" />
+    <None Include="Resources\pexels-la-miko-3616764 %281%29 %281%29.jpg" />
+    <None Include="Resources\Iconoir-Team-Iconoir-Log-out.ico" />
+    <None Include="Resources\Steve-Zondicons-Location.ico" />
+    <None Include="Resources\Vexels-Office-Email-send.ico" />
+    <None Include="Resources\Iconsmind-Outline-Profile.ico" />
+    <None Include="Resources\LOGOMAIN.png" />
+    <None Include="Resources\LOGO FINAL.png" />
+    <None Include="Resources\image11.jpg" />
+    <None Include="Resources\LOGO FOR PROT.png" />
+    <None Include="Resources\LOGO.png" />
+    <None Include="Resources\30087784_v915-wit-008-f %281%29.jpg" />
+    <None Include="Resources\30087784_v915-wit-008-f.jpg" />
+    <None Include="Resources\Gakuseisean-Aire-Upload-Folder.ico" />
+    <None Include="Resources\Custom-Icon-Design-Flatastic-4-Users.ico" />
+    <None Include="Resources\custdash1.png" />
+    <None Include="Resources\custdash2.png" />
+    <None Include="Resources\custdash3.png" />
+    <None Include="Resources\custdash4.png" />
+    <None Include="Resources\1911.jpg" />
+    <None Include="Resources\1701869.png" />
+    <None Include="Resources\4160044-200.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\1_2_2024 1_25_36 AM %281%29.png" />
+    <None Include="Resources\186492-200.png" />
+    <None Include="Resources\2311503.png" />
+    <Content Include="Resources\Icon1.ico" />
+    <None Include="Resources\rm209-ning-20.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
