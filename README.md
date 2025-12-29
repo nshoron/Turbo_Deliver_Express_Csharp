@@ -3,7 +3,6 @@
 
 **Turbo Deliver Express (TDE)** is a **desktop-based e-courier management system** designed to ensure fast, secure, and transparent parcel delivery. The system connects **customers**, **delivery personnel**, and **administrators** on a single platform to manage parcel booking, tracking, and delivery efficiently.
 
-> **Tagline:** *Your Packages, Our Priority.*
 
 ---
 
