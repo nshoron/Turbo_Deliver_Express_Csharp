@@ -128,7 +128,4 @@ The system ensures transparency, privacy, and reliability in courier services.
 
 ---
 
-## 👨‍💻 Team
 
-**Team TDE**
-© 2023 – All Rights Reserved
